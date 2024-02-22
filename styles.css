@@ -170,8 +170,9 @@ input {
   padding: 4px 8px;
 }
 
-input[type="text"]:invalid,
-input[type="email"]:invalid {
+input[type="text"]:invalid:focus,
+input[type="email"]:invalid:focus,
+input[type="password"]:invalid:focus  {
   border-color: #d55c5f;
   color: #d55c5f;
 }
@@ -182,7 +183,7 @@ input:focus {
   background-color: #fafafa;
 }
 
-input[type="password"] + span::after {
+input[type="password"] + span.error::after {
   display: block;
   content: "*Passwords do not match";
   color: red;
