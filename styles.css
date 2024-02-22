@@ -170,6 +170,25 @@ input {
   padding: 4px 8px;
 }
 
+input[type="text"]:invalid,
+input[type="email"]:invalid {
+  border-color: #d55c5f;
+  color: #d55c5f;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid lightblue;
+  background-color: #fafafa;
+}
+
+input[type="password"] + span::after {
+  display: block;
+  content: "*Passwords do not match";
+  color: red;
+  text-transform: none;
+}
+
 button {
   cursor: pointer;
   font-size: 1rem;
@@ -182,6 +201,14 @@ button {
   background-color: #596d48;
 }
 
+button:hover {
+  background-color: #799562;
+}
+
+button:active {
+  background-color: #47573a;
+}
+
 button + p {
   font-weight: bold;
 }
@@ -191,4 +218,3 @@ button + p > a {
   color: #596d48;
   font-weight: 900;
 }
-
