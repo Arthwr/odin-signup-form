@@ -172,7 +172,7 @@ input {
 
 input[type="text"]:invalid:focus,
 input[type="email"]:invalid:focus,
-input[type="password"]:invalid:focus  {
+input[type="password"]:invalid:focus {
   border-color: #d55c5f;
   color: #d55c5f;
 }
